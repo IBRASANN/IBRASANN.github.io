@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="design.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!--<link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>-->
+    <link rel="shortcut icon" type="image/x-icon" href="images/profile.png" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="main">
+      <nav class="topnav">
+        <a href="Resume-Ibrahim-Sanna1.pdf" target="_blank"><i class="bi bi-file-person-fill resume" title="resume"></i></a><a class="rightNav" onclick="scrollAbout()">About</a><a class="rightNav"  data-toggle="modal" data-target="#exampleModalCenter" onclick="btnReset()">Contact</a>
+      </nav>
+      <div class="hero">
+        <div class="intro">
+          Hi! I'm <span class="highlight1">Ibrahim Sanna</span>,<br>
+          I'm a <span class="highlight2">Software Engineering</span> student at <span class="highlight1">PSUT</span>.<br><br>
+          <a class="socials" href="https://github.com/IBRASANN" target="_blank"><i class="bi bi-github"></i></a> <a class="socials" href="https://www.linkedin.com/in/ibrahim-sanna" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="avatar">
+          <img src="images/avataaars.png" alt="avatar">
+        </div>
+
+      </div>
+      <div class="projectheader"><span>Some of My Projects</span></div>
+      <div class="projects">
+        <button class="btn-pre" title="previous"><img src="images/arrowIcon-removebg-preview.png" alt="pre" title="previous"></button>
+        <div class="proj-container">
+           
+          <div class="proj-card">
+            <img src="images/aldanaHomePage.png" alt="">
+            <p><span>Online Accessorie Store</span></p><div class="underline"></div><button type="button" class="btn btn-outline-primary btn-sm" onclick="location.href = 'project1'">Read More</button>
+          </div>
+          <div class="proj-card">
+            <img src="images/CivilStatusandPassportsDepartment.png" alt="">
+            <p><span>Government Desktop Application</span></p><div class="underline"></div><button type="button" class="btn btn-outline-primary btn-sm" onclick="location.href = 'project2'">Read More</button>
+          </div>
+          <div class="proj-card">
+            <img src="images/myPortfolio.png" alt="">
+            <p><span>My Portfolio</span></p><div class="underline"></div><button type="button" class="btn btn-outline-primary btn-sm">Read More</button>
+          </div>
+          <div class="proj-card">
+            <img src="images/istockphoto-931042070-612x612.jpg" alt="">
+            <p><span>Mobile Book Store</span></p><div class="underline"></div><button type="button" class="btn btn-outline-primary btn-sm" disabled>comming soon</button>
+           </div>
+        </div>
+        
+        <button class="btn-nxt" title="next"><img src="images/arrowIcon-removebg-preview.png" alt="next" title="next"></button> 
+      </div>
+      <div class="about container" id="About">
+        <h3>More About Me</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium consectetur laborum laboriosam! Tenetur aliquam ipsum, provident illum, maxime quibusdam quod veritatis doloribus veniam inventore vel dolor. Provident, voluptatum explicabo.</p>
+        
+      </div>
+      
+
+      <footer>
+        <div class="contact"><h4>Contact</h4><p><i class="bi bi-telephone-fill"></i> 0785855449 <br> <i class="bi bi-envelope-fill"></i> ibr20200491@std.psut.edu.jo</p></div>
+        <div class="soc"><h4>Socials</h4><a class="socials" href="https://github.com/IBRASANN" target="_blank"><i class="bi bi-github"></i></a> <a class="socials" href="https://www.linkedin.com/in/ibrahim-sanna" target="_blank"><i class="bi bi-linkedin"></i></a> <br> Reach out to me at any time!</div>
+        <small>@2023 Ibrahim Sanna</small>
+      </footer>
+    </div>
+<!--------------------------------------------------------------------------------------------------->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Contact Information</h5>
+          </div>
+          <div class="modal-body">
+            <p>Phone Number: 0785855449 <button type="button" class="btn btn-outline-dark btn-sm copy" id="copy1" onclick="copyNumber()">Copy</button></p>
+            <p>Email: ibr20200491@std.psut.edu.jo <button type="button" class="btn btn-outline-dark btn-sm copy" id="copy2" onclick="copyEmail()">Copy</button></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="topScroll"><i class="bi bi-arrow-up-short"></i></button>
+
+<script src="responsive.js"></script>
+  </body>
+</html>
